@@ -5,7 +5,11 @@ export default defineNuxtConfig({
   postcss: {
     plugins: {
       tailwindcss: {},
-      autoprefixer: {},
-    },
+      autoprefixer: {}
+    }
   },
+  modules: [
+    // Simple usage
+    '@nuxtjs/eslint-module'
+  ]
 })
