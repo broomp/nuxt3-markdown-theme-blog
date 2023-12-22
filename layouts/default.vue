@@ -1,7 +1,9 @@
 <template>
-  <div>
-    <p>Some Header</p>
-    <slot />
-    <p>Some footer</p>
-  </div>
+  <main class="flex flex-col min-h-screen">
+    <AppHeader />
+    <div class="flex-grow">
+      <slot />
+    </div>
+    <AppFooter />
+  </main>
 </template>
